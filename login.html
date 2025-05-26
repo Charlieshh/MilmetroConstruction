@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <link rel="stylesheet" href="login.css">
+    <title>Login Page</title>
+
+</head>
+<body>
+<div class="login-container">
+    <form class="login-form">
+      <div class="logo">
+        <img src="milmetrologo.jpg" alt="Milmetro logo" />
+      </div>
+      <h2>Login Page</h2>
+
+      <label>Username:</label>
+      <input type="text" name="username" required>
+
+      <label>Email address:</label>
+      <input type="email" name="email" required>
+
+      <label>Password:
+        <div class="password-container">
+          <input type="password" name="password" required>
+          <span class="eye-icon">👁️‍🗨️</span>
+        </div>
+      </label>
+
+    <label>Gender:</label>
+      <div class="gender-options">
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="others"> Others</label>
+      </div>
+
+      <button type="submit">Log In</button>
+    </form>
+  </div>
+</body>
+</html>
