@@ -4,41 +4,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link to external stylesheet -->
   <link rel="stylesheet" href="style.css" />
   <title>My Profile</title>
 </head>
 
 <body class="prof">
+  <!-- Main container for profile content -->
   <div class="profile-container">
+    <!-- Button to return to the home page -->
     <button class="back-btn" onclick="location.href='home.html'">← Return</button>
     
+    <!-- Profile header with image and username -->
     <div class="profile-header">
       <img src="profile.png" alt="Profile" class="profile-img">
 
       <div>
         <h1 class="username">Username</h1>
+        <!-- Button to change profile picture -->
         <button class="change-pic">Change Profile Picture</button>
       </div>
     </div>
 
     <h2>My Profile</h2>
+
+    <!-- Form for editing profile information -->
     <form class="profile-form">
+      <!-- Row with name fields -->
       <div class="form-row">
         <input type="text" placeholder="First Name">
         <input type="text" placeholder="Surname">
         <input type="text" placeholder="Middle Initial">
       </div>
+
+      <!-- Row with contact and personal details -->
       <div class="form-row">
         <input type="text" placeholder="Phone No.">
         <input type="date" placeholder="Birthdate">
         <input type="text" placeholder="Gender">
       </div>
+
+      <!-- Additional fields -->
       <input type="text" placeholder="Address">
       <input type="email" placeholder="Email">
       <input type="password" placeholder="Password">
 
+      <!-- Form action buttons -->
       <div class="form-buttons">
-        <button type="submit" onclick="location.href='home.html'"class="save-btn">Save</button>
+        <!-- Save button redirects to home -->
+        <button type="submit" onclick="location.href='home.html'" class="save-btn">Save</button>
+        <!-- Button to switch account -->
         <button type="button" onclick="location.href='login.html'" class="alt-login">Log into another account</button>
       </div>
     </form>
