@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Milmetro Construction</title>
+</head>
+
+<body class="homepage">
+
+  <div class="navigation">
+    <img src="images/profile.png" alt="profile">
+    <p>Profile</p>
+    <ul>
+      <li class="active"><a href="home.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="settings.html">Settings</a></li>
+      <li><a href="audit.html">Audit Trail</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <div class="about">
+    <h2>About Us</h2>
+    <img src="images/MilmetroLogo.jpg" alt="Milmetro Construction">
+    <p>
+      MILMETRO CONSTRUCTION is a PCAB-accredited general contracting firm. It was established on February 28, 2017, and has been
+      engaged in general building and engineering services for both government and private institutions.
+      <br><br>
+       Our company is manned by highly trained and experienced professionals in the field of engineering and construction. Our goal is to deliver quality
+      and cost-effective services on time and to meet client satisfaction. We aim to be a highly respected general construction firm
+      known for professionalism, performance, and reliability.
+      <br><br>
+      #MilmetroConstruction<br>
+      #ExcellenceBeyondMeasure
+    </p>
+  </div>
+
+  <div class="services">
+    <h2>Services</h2>
+
+    <img src="images/landdep.jpg" alt="land department works">
+    <h4>Land Development Works</h4>
+    <ul>
+      <li>Roads</li>
+      <li>Land Scaping</li>
+      <li>Hardscape</li>
+      <li>Earthworks</li>
+      <li>Waterlines, sewer lines, and drainage</li>
+    </ul>
+
+    <img src="images/buildcon.jpg" alt="Building Construction">
+    <h4>Building Construction</h4>
+    <ul>
+      <li>Residential</li>
+      <li>Non-residential Commercial</li>
+      <li>Warehouse</li>
+    </ul>
+
+    <img src="images/Consult.jpg" alt="Consultancy & Engineering Services">
+    <h4>Consultancy & Engineering Services</h4>
+    <ul>
+      <li>Construction</li>
+      <li>Project Management</li>
+      <li>Detailed Management</li>
+      <li>Engineering Design & Estimate</li>
+      <li>Site Supervision and Monitoring</li>
+    </ul>
+
+    <img src="images/struc.jpg" alt="Structural">
+    <h4>Structural</h4>
+    <ul>
+      <li>Steel works</li>
+      <li>Retrofitting</li>
+      <li>Demolition</li>
+      <li>Trusses</li>
+    </ul>
+
+    <img src="images/archfin.jpg" alt="Architectural Finishes">
+    <h4>Architectural Finishes</h4>
+    <ul>
+      <li>Office Fit-out</li>
+      <li>House Extension</li>
+      <li>Renovations</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p style="text-align:center;">&copy; 2025. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
