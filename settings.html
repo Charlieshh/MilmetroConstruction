@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>System Settings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="setting">
+  <div class="navigation">
+    <img src="profile.png" alt="Profile" class="profile-pic" />
+    <ul>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li class="active"><a href="settings.html">Settings</a></li>
+      <li><a href="audit.html">Audit Trail</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+ <main class="main-content">
+  <h1>System Settings</h1>
+  <div class="settings-buttons">
+
+    <a href="profile.html" class="button">
+      <span>👤 Edit Profile</span> <span>➔</span>
+    </a>
+
+    <a href="profile.html" class="button">
+      <span>🔑 Change Password</span> <span>➔</span>
+    </a>
+
+   <details class="button">
+  <summary>🔔 Notification Preferences</summary>
+  <div class="option-box">
+    <label><input type="checkbox" checked> Email Notifications</label><br>
+    <label><input type="checkbox"> SMS Notifications</label><br>
+    <label><input type="checkbox" checked> Push Notifications</label>
+  </div>
+</details>
+
+<details class="button">
+  <summary>🌐 Language & Timezone</summary>
+  <div class="option-box">
+    <label>Language:
+      <select>
+        <option>English</option>
+        <option>Filipino</option>
+        <option>Spanish</option>
+      </select>
+    </label><br><br>
+    <label>Timezone:
+      <select>
+        <option>UTC+8 (Philippines)</option>
+        <option>UTC+0 (GMT)</option>
+        <option>UTC-5 (US Eastern)</option>
+      </select>
+    </label>
+  </div>
+</details>
+
+    <a href="login.html" class="button logout">
+      <span>↩ Logout</span>
+      <small>Delete Account</small>
+      <span>➔</span>
+    </a>
+
+  </div>
+</main>
+</body>
+</html>

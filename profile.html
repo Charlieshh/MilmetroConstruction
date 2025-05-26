@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>My Profile</title>
+</head>
+
+<body class="prof">
+  <div class="profile-container">
+    <button class="back-btn" onclick="location.href='home.html'">← Return</button>
+    
+    <div class="profile-header">
+      <img src="profile.png" alt="Profile" class="profile-img">
+
+      <div>
+        <h1 class="username">Username</h1>
+        <button class="change-pic">Change Profile Picture</button>
+      </div>
+    </div>
+
+    <h2>My Profile</h2>
+    <form class="profile-form">
+      <div class="form-row">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Surname">
+        <input type="text" placeholder="Middle Initial">
+      </div>
+      <div class="form-row">
+        <input type="text" placeholder="Phone No.">
+        <input type="date" placeholder="Birthdate">
+        <input type="text" placeholder="Gender">
+      </div>
+      <input type="text" placeholder="Address">
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+
+      <div class="form-buttons">
+        <button type="submit" onclick="location.href='home.html'"class="save-btn">Save</button>
+        <button type="button" onclick="location.href='login.html'" class="alt-login">Log into another account</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
