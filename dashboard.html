@@ -4,9 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <title>Simple System Dashboard</title>
+  <title>System Dashboard</title>
 </head>
   <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: Arial, sans-serif;
       background-color: #f0f0f0;
@@ -27,47 +34,85 @@
       padding-left: 20px;
     }
 
-    .chart-container {
+    .main-content {
+      flex: 1;
+      padding: 30px;
+      background-color: #f2caca;
+    }
+
+    .main-content h1 {
+      margin-top: 0;
+    }
+
+    .date-range {
+      margin: 10px 0 20px;
+    }
+
+    .summary-cards {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card {
       background: white;
-      padding: 10px;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
     .chart-container img {
       width: 100%;
-      max-width: 600px;
+      max-width: 3000px;
     }
   </style>
 </head>
 <body>
 
-  <div class="sidebar">
-    <img src="Milmetro/profile.png" alt="Profile">
+  <div class="navigation">
+    <img src="profile.png" alt="Profile">
     <ul>
       <li><a href="home.html">Home</a></li>
-      <li><a href="dashboard.html">System Dashboard</a></li>
+      <li class="active"><a href="dashboard.html">System Dashboard</a></li>
       <li><a href="settings.html">System Settings</a></li>
       <li><a href="audit.html">Audit Trail</a></li>
       <li><a href="contact.html">Contact Us</a></li>
     </ul>
   </div>
 
-  <div class="main-content">
+ <div class="main-content">
     <h1>System Dashboard</h1>
-    <p>Select Period: 
-      <input type="date"> to <input type="date">
-    </p>
+    <div class="date-range">
+      <label>Select period:</label>
+      <input type="date" value="2022-01-01" />
+      to
+      <input type="date" value="2022-12-31" />
+    </div>
 
-    <h2>Summary</h2>
-    <ul>
-      <li>Total Income: $250,000.00</li>
-      <li>Success Rate: 36.2%</li>
-      <li>New Clients: 36</li>
-      <li>Completed Projects: 29</li>
-    </ul>
+    <div class="summary-cards">
+      <div class="card">
+        <p>Total Income</p>
+        <h2>$250,000.00</h2>
+      </div>
+      <div class="card">
+        <p>Inquiry Success Rate</p>
+        <h2>36.2%</h2>
+      </div>
+      <div class="card">
+        <p>Number of New Clients</p>
+        <h2>36</h2>
+      </div>
+      <div class="card">
+        <p>Number of Completed Projects</p>
+        <h2>29</h2>
+      </div>
+    </div>
 
     <h2>Charts</h2>
     <div class="chart-container">
-      <img src="Milmetro/dashboard-chart.jpg" alt="Dashboard Chart">
+      <img src="dashboard-chart.jpg" alt="Dashboard Chart">
     </div>
   </div>
 
