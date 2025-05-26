@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Contact Us - Milmetro Construction</title>
+
+  <style>
+
+    body {
+      margin: 0;
+      display: flex;
+      background-color: #f4f4f4;
+    }
+
+    .main-content {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  margin: 30px 30px 30px 250px;
+  border: 4px solid #880000;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+    .logo {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      width: 140px;
+      z-index: 1;
+    }
+
+    .contact-info {
+      position: relative;
+      z-index: 2;
+    }
+
+    .contact-info h2 {
+      font-size: 32px;
+      margin: 0;
+    }
+
+    .contact-info strong {
+      font-size: 20px;
+    }
+
+    .info-group {
+      display: flex;
+      align-items: center;
+      margin: 12px 0;
+    }
+
+    .icon {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    .eye-icon {
+      font-size: 18px;
+      margin-left: 10px;
+    }
+
+    .divider {
+      border-top: 2px solid #7a0000;
+      margin: 20px 0;
+    }
+
+    .address-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      gap: 30px;
+    }
+
+    .address {
+      width: 48%;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .address .icon {
+      margin-top: 4px;
+    }
+
+    .phones {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .phones .info-group {
+      width: 48%;
+    }
+
+    .phones b {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navigation">
+    <img src="profile.png" alt="Profile">
+    <ul>
+        <li><a href="profile.html">Profile</a></li>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="dashboard.html">System Dashboard</a></li>
+      <li><a href="settings.html">System Settings</a></li>
+      <li><a href="audit.html">Audit Trail</a></li>
+      <li class="active"><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+
+    <img src="MilmetroLogo.jpg" alt="Milmetro Logo" class="logo">
+
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p><strong>ENGR. ERWIN K. LEE</strong><br>Owner</p>
+
+      <div class="info-group">
+        <span class="icon">📞</span> 09612778913
+      </div>
+
+      <div class="info-group">
+        <span class="icon">✉️</span> milmetroconstruction@gmail.com
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="address-container">
+        <div class="address">
+          <span class="icon">📍</span>
+          <span>G/F ASCORP Building, St. Dominic Corinthian, Dolores, City of San Fernando, Pampanga</span>
+        </div>
+        <div class="address">
+          <span class="icon">📍</span>
+          <span>2/F Unit A Burkhouse Bldg no. 05, Pedro Gil St., Sta Ana City, Manila</span>
+        </div>
+      </div>
+
+      <div class="phones">
+        <div class="info-group">
+          <span class="icon">📞</span> <b>(045) 457 - 8482</b>
+        </div>
+        <div class="info-group">
+          <span class="icon">📞</span> <b>(02) 8554 - 5344</b>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

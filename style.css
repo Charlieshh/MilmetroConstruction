@@ -1,8 +1,10 @@
+/*Global*/
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Roboto&display=swap');
+
 body,
-html {
-  margin: 0;
-  padding: 0;
+  html{
   font-family: 'Alice', 'Roboto', sans-serif;
+  background-color: #f2caca;
 }
 
 .navigation {
@@ -41,13 +43,20 @@ html {
   text-decoration: none;
 }
 
-.navigation a:hover
-.navigation a:active {
-  text-decoration: underline;
-  background-color: #b22222;
-  font-weight: bold;
-  padding: 10x;
-  border-radius: 5px;
+.navigation ul li.active {
+      background-color: white;
+    }
+
+    .navigation ul li.active a {
+      color: #7a0000;
+      font-weight: bold;
+    }
+/*Global*/
+
+/*Home page*/
+.homepage body{
+  margin: 0;
+  padding: 0;
 }
 
 .homepage {
@@ -119,3 +128,4 @@ html {
   border-top: 1px solid #ccc;
   margin-top: 20px;
 }
+/*Home page*/
