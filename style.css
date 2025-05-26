@@ -19,11 +19,10 @@ html {
 }
 
 .navigation img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .navigation ul {
@@ -42,11 +41,16 @@ html {
   text-decoration: none;
 }
 
-.navigation a:hover {
+.navigation a:hover
+.navigation a:active {
   text-decoration: underline;
+  background-color: #b22222;
+  font-weight: bold;
+  padding: 10x;
+  border-radius: 5px;
 }
 
-body {
+.homepage {
   margin-left: 220px;
   padding: 20px;
 }
@@ -64,11 +68,10 @@ body {
   margin-top: 0;
 }
 
-.homepage .about img,
-.homepage .services img {
+.homepage .about img {
   display: block;
   margin: 10px auto;
-  max-width: 150px;
+  max-width: 250px;
   height: auto;
 }
 
@@ -86,6 +89,19 @@ body {
 .homepage .services h4 {
   margin-top: 30px;
   color: #800000;
+}
+
+.homepage .services img {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  max-width: 300px;
+  height: auto;
+}
+.homepage .services ul::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .homepage .services ul {
