@@ -7,19 +7,25 @@
 
 </head>
 <body>
+  <!-- This is for the login form -->
 <div class="login-container">
     <form action="home.html" class="login-form">
       <div class="logo">
         <img src="milmetrologo.jpg" alt="Milmetro logo" />
       </div>
+
       <h2>Login Page</h2>
 
+
+      <!-- Username input -->
       <label>Username:</label>
       <input type="text" name="username" required>
 
+       <!-- Email input -->
       <label>Email address:</label>
       <input type="email" name="email" required>
 
+       <!-- Password input with a eye icon  -->
       <label>Password:
         <div class="password-container">
           <input type="password" name="password" required>
@@ -27,6 +33,7 @@
         </div>
       </label>
 
+       <!-- Gender selection -->
     <label>Gender:</label>
       <div class="gender-options">
         <label><input type="radio" name="gender" value="male"> Male</label>
@@ -34,6 +41,7 @@
         <label><input type="radio" name="gender" value="others"> Others</label>
       </div>
 
+      <!-- Submit button to log in -->
       <button type="submit">Log In</button>
     </form>
   </div>

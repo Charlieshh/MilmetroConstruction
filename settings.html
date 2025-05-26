@@ -5,7 +5,9 @@
   <title>System Settings</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body class="setting">
+  <!-- Sidebar navigation -->
   <div class="navigation">
     <img src="profile.png" alt="Profile" class="profile-pic" />
     <ul>
@@ -18,54 +20,59 @@
     </ul>
   </div>
 
- <main class="main-content">
-  <h1>System Settings</h1>
-  <div class="settings-buttons">
+  <!-- Main content area for settings -->
+  <main class="main-content">
+    <h1>System Settings</h1>
 
-    <a href="profile.html" class="button">
-      <span>👤 Edit Profile</span> <span>➔</span>
-    </a>
+    <div class="settings-buttons">
+      <!-- Button to edit profile -->
+      <a href="profile.html" class="button">
+        <span>👤 Edit Profile</span> <span>➔</span>
+      </a>
 
-    <a href="profile.html" class="button">
-      <span>🔑 Change Password</span> <span>➔</span>
-    </a>
+      <!-- Button to change password -->
+      <a href="profile.html" class="button">
+        <span>🔑 Change Password</span> <span>➔</span>
+      </a>
 
-   <details class="button">
-  <summary>🔔 Notification Preferences</summary>
-  <div class="option-box">
-    <label><input type="checkbox" checked> Email Notifications</label><br>
-    <label><input type="checkbox"> SMS Notifications</label><br>
-    <label><input type="checkbox" checked> Push Notifications</label>
-  </div>
-</details>
+      <!-- Expandable section for notification settings -->
+      <details class="button">
+        <summary>🔔 Notification Preferences</summary>
+        <div class="option-box">
+          <label><input type="checkbox" checked> Email Notifications</label><br>
+          <label><input type="checkbox"> SMS Notifications</label><br>
+          <label><input type="checkbox" checked> Push Notifications</label>
+        </div>
+      </details>
 
-<details class="button">
-  <summary>🌐 Language & Timezone</summary>
-  <div class="option-box">
-    <label>Language:
-      <select>
-        <option>English</option>
-        <option>Filipino</option>
-        <option>Spanish</option>
-      </select>
-    </label><br><br>
-    <label>Timezone:
-      <select>
-        <option>UTC+8 (Philippines)</option>
-        <option>UTC+0 (GMT)</option>
-        <option>UTC-5 (US Eastern)</option>
-      </select>
-    </label>
-  </div>
-</details>
+      <!-- Expandable section for language and timezone settings -->
+      <details class="button">
+        <summary>🌐 Language & Timezone</summary>
+        <div class="option-box">
+          <label>Language:
+            <select>
+              <option>English</option>
+              <option>Filipino</option>
+              <option>Spanish</option>
+            </select>
+          </label><br><br>
+          <label>Timezone:
+            <select>
+              <option>UTC+8 (Philippines)</option>
+              <option>UTC+0 (GMT)</option>
+              <option>UTC-5 (US Eastern)</option>
+            </select>
+          </label>
+        </div>
+      </details>
 
-    <a href="login.html" class="button logout">
-      <span>↩ Logout</span>
-      <small>Delete Account</small>
-      <span>➔</span>
-    </a>
-
-  </div>
-</main>
+      <!-- Logout button with delete account option -->
+      <a href="login.html" class="button logout">
+        <span>↩ Logout</span>
+        <small>Delete Account</small>
+        <span>➔</span>
+      </a>
+    </div>
+  </main>
 </body>
 </html>

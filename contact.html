@@ -2,29 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <title>Contact Us - Milmetro Construction</title>
 
   <style>
-    /*General page style*/
+    /* General page layout and background */
     body {
       margin: 0;
       display: flex;
       background-color: #f4f4f4;
     }
 
+    /* Main content styling */
     .main-content {
-  flex: 1;
-  background-color: white;
-  padding: 40px;
-  margin: 30px 30px 30px 250px;
-  border: 4px solid #880000;
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-}
+      flex: 1;
+      background-color: white;
+      padding: 40px;
+      margin: 30px 30px 30px 250px;
+      border: 4px solid #880000;
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+    }
 
+    /* Company logo in top-right corner */
     .logo {
       position: absolute;
       top: 30px;
@@ -33,6 +35,7 @@
       z-index: 1;
     }
 
+    /* Contact information layout */
     .contact-info {
       position: relative;
       z-index: 2;
@@ -68,6 +71,7 @@
       margin: 20px 0;
     }
 
+    /* Address section layout */
     .address-container {
       display: flex;
       justify-content: space-between;
@@ -85,6 +89,7 @@
       margin-top: 4px;
     }
 
+    /* Phone numbers section layout */
     .phones {
       display: flex;
       justify-content: space-between;
@@ -101,11 +106,12 @@
   </style>
 </head>
 <body>
-<!--Navigation sidebar-->
+
+  <!-- Sidebar navigation menu -->
   <div class="navigation">
     <img src="profile.png" alt="Profile">
     <ul>
-        <li><a href="profile.html">Profile</a></li>
+      <li><a href="profile.html">Profile</a></li>
       <li><a href="home.html">Home</a></li>
       <li><a href="dashboard.html">System Dashboard</a></li>
       <li><a href="settings.html">System Settings</a></li>
@@ -113,11 +119,12 @@
       <li class="active"><a href="contact.html">Contact Us</a></li>
     </ul>
   </div>
-<!--Main Content-->
-  <div class="main-content">
 
+  <!-- Main content with contact details -->
+  <div class="main-content">
     <img src="MilmetroLogo.jpg" alt="Milmetro Logo" class="logo">
-<!--Contact Information-->
+
+    <!-- Company and contact details -->
     <div class="contact-info">
       <h2>Contact Us</h2>
       <p><strong>ENGR. ERWIN K. LEE</strong><br>Owner</p>
@@ -131,7 +138,8 @@
       </div>
 
       <div class="divider"></div>
-<!--Address Section-->
+
+      <!-- Office addresses -->
       <div class="address-container">
         <div class="address">
           <span class="icon">📍</span>
@@ -142,7 +150,8 @@
           <span>2/F Unit A Burkhouse Bldg no. 05, Pedro Gil St., Sta Ana City, Manila</span>
         </div>
       </div>
-<!--Phone Numbers-->
+
+      <!-- Landline numbers -->
       <div class="phones">
         <div class="info-group">
           <span class="icon">📞</span> <b>(045) 457 - 8482</b>

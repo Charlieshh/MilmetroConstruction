@@ -7,12 +7,15 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="audit">
+  <!-- Main container for layout -->
   <div class="container">
 
+    <!-- Sidebar navigation -->
     <div class="sidebar">
       <div class="navigation">
-        <img src="profile.png" alt="profile" class="profile-img" />
+        <img src="profile.png" alt="profile" class="profile-img" /> 
         <ul>
+          <!-- Navigation links -->
           <li><a href="profile.html">Profile</a></li>
           <li><a href="home.html">Home</a></li>
           <li><a href="dashboard.html">Dashboard</a></li>
@@ -23,9 +26,11 @@
       </div>
     </div>
 
+    <!-- Main content area -->
     <div class="main-content">
       <h1>Audit Trail</h1>
 
+      <!-- Date range selection -->
       <div class="date-range">
         <label>Select period:</label>
         <input type="date" value="2022-01-01" />
@@ -33,7 +38,7 @@
         <input type="date" value="2022-12-31" />
       </div>
 
-
+      <!-- Audit trail table -->
       <table id="auditTable">
         <thead>
           <tr>
@@ -43,30 +48,56 @@
             <th>Action Made</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          <tbody>
+  <!--Table output examples-->
+  <tr>
+    <td>1</td>
+    <td>2025-05-25 10:15 AM</td>
+    <td>Admin</td>
+    <td>User created a new project</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>2025-05-25 11:45 AM</td>
+    <td>Joy</td>
+    <td>Updated profile settings</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>2025-05-25 01:20 PM</td>
+    <td>Lovely</td>
+    <td>Logged out</td>
+  </tr>
+</tbody>
+
+        </tbody>
       </table>
     </div>
   </div>
 
+  <!-- JavaScript for dynamic table row insertion -->
   <script>
-    const form = document.getElementById('auditForm');
-    const table = document.getElementById('auditTable').getElementsByTagName('tbody')[0];
-    let count = 1;
+    const table = document.getElementById('auditTable').getElementsByTagName('tbody')[0]; // Table body reference
+    let count = 1; // Row counter
 
+    // Event listener for form submission
     form.addEventListener('submit', function(e) {
-      e.preventDefault();
+      e.preventDefault(); // Prevent page reload
 
+      // Get values from input fields (assumes form fields exist)
       const dateTime = document.getElementById('dateTime').value;
       const user = document.getElementById('user').value;
       const action = document.getElementById('action').value;
 
+      // Insert a new row in the table
       const row = table.insertRow();
-      row.insertCell(0).textContent = count++;
-      row.insertCell(1).textContent = new Date(dateTime).toLocaleString();
-      row.insertCell(2).textContent = user;
-      row.insertCell(3).textContent = action;
+      row.insertCell(0).textContent = count++; // Serial number
+      row.insertCell(1).textContent = new Date(dateTime).toLocaleString(); // Format date and time
+      row.insertCell(2).textContent = user; // User
+      row.insertCell(3).textContent = action; // Action made
 
-      form.reset();
+      form.reset(); // Clear form fields
     });
   </script>
 </body>

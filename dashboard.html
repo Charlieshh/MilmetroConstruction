@@ -1,12 +1,14 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <title>System Dashboard</title>
-</head>
+
   <style>
+    /* Reset and box model */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -18,9 +20,12 @@
       margin: 0;
     }
 
+    /* Main content area styling */
     .main-content {
       margin-left: 220px;
-      padding: 20px;
+      padding: 30px;
+      background-color: #f2caca;
+      flex: 1;
     }
 
     .main-content h1,
@@ -28,24 +33,20 @@
       color: #333;
     }
 
-    .main-content ul {
-      padding-left: 20px;
-    }
-
-    .main-content {
-      flex: 1;
-      padding: 30px;
-      background-color: #f2caca;
-    }
-
     .main-content h1 {
       margin-top: 0;
     }
 
+    .main-content ul {
+      padding-left: 20px;
+    }
+
+    /* Date selection section */
     .date-range {
       margin: 10px 0 20px;
     }
 
+    /* Summary cards layout */
     .summary-cards {
       display: flex;
       gap: 20px;
@@ -61,6 +62,7 @@
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
+    /* Chart styling */
     .chart-container img {
       width: 100%;
       max-width: 3000px;
@@ -69,6 +71,7 @@
 </head>
 <body>
 
+  <!-- Sidebar navigation -->
   <div class="navigation">
     <img src="profile.png" alt="Profile">
     <ul>
@@ -81,8 +84,11 @@
     </ul>
   </div>
 
- <div class="main-content">
+  <!-- Main dashboard content -->
+  <div class="main-content">
     <h1>System Dashboard</h1>
+
+    <!-- Date range filter -->
     <div class="date-range">
       <label>Select period:</label>
       <input type="date" value="2022-01-01" />
@@ -90,6 +96,7 @@
       <input type="date" value="2022-12-31" />
     </div>
 
+    <!-- Summary statistic cards -->
     <div class="summary-cards">
       <div class="card">
         <p>Total Income</p>
@@ -109,12 +116,15 @@
       </div>
     </div>
 
+    <!-- Dashboard charts section -->
     <h2>Charts</h2>
     <div class="chart-container">
       <img src="dashboard-chart.jpg" alt="Dashboard Chart">
     </div>
   </div>
-<footer>
+
+  <!-- Footer -->
+  <footer>
     <p style="text-align:center;">&copy; 2025. All rights reserved.</p>
   </footer>
 

@@ -46,7 +46,7 @@ body,
 .navigation ul li.active {
       background-color: white;
     }
-
+/*Highlights the active page*/
     .navigation ul li.active a {
       color: #7a0000;
       font-weight: bold;
